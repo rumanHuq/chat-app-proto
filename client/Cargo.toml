@@ -1,0 +1,14 @@
+[package]
+edition = "2021"
+name    = "client"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+console_log          = { version = "0.2", features = ["color"] }
+log                  = "0.4.14"
+reqwasm              = "0.3.0"
+sycamore             = { git = "https://github.com/sycamore-rs/sycamore", rev = "df16d18ad29933316aa666185e7e2dd7002eb662" }
+wasm-bindgen-futures = "0.4.28"
+web-sys              = { version = "0.3.55", features = ["BinaryType", "Blob", "ErrorEvent", "FileReader", "MessageEvent", "ProgressEvent", "WebSocket", "KeyboardEvent"] }
